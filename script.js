@@ -1,9 +1,12 @@
+const audio = new Audio('./audio/click.mp3');
 // Clears the screen on click of C button.
 function clearScreen() {
   document.getElementById("result").value = "";
+  audio.play();
 }
 // Displays entered value on screen.
 function liveScreen(value) {
+  audio.play();
   document.getElementById("result").value += value;
 }
 // Swaps the style sheet in order to  achieve dark mode.
